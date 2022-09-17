@@ -31,6 +31,32 @@ body {
   .heading__primary:hover {
     color: #f07dea; }
 
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 1.2rem 2.4rem;
+  font-family: var(--font-primary);
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 9px;
+  text-transform: uppercase;
+  background-color: #a460ed;
+  color: #eeeeee;
+  transition: all 400ms ease-in-out;
+  border: 1px solid transparent; }
+  .btn:hover {
+    background-color: transparent;
+    border: 1px solid #a460ed; }
+  .btn--bordered {
+    background-color: transparent;
+    border: 1px solid #9fc9f3;
+    transition: background-color 400ms ease-in-out; }
+    .btn--bordered:hover {
+      background-color: #9fc9f3;
+      border: 1px solid #9fc9f3; }
+
 .hero {
   min-height: 100vh;
   background-color: #100a18;
@@ -38,8 +64,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem; }
+  gap: 3rem; }
   .hero__subtitle {
     font-family: var(--font-fredrika);
     font-size: 3.2rem;
-    color: #eeeeee; }
+    color: #eeeeee;
+    margin-bottom: 3rem; }
+  .hero__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; }

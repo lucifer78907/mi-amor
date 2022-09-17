@@ -5,11 +5,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 
   &__subtitle {
     font-family: var(--font-fredrika);
     font-size: 3.2rem;
     color: $color-white;
+    margin-bottom: 3rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
   }
 }
