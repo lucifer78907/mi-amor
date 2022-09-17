@@ -1,2 +1,44 @@
 .footer {
+  min-height: 100vh;
+  background-color: $color-black;
+  padding: 6rem;
+  text-align: center;
+
+  &__heading {
+    background-image: linear-gradient(to right, #12c2e9, #c471ed, #ec38bc);
+    background-clip: text;
+    font-size: 11rem;
+    font-weight: 700;
+    font-family: var(--font-fredrika);
+    color: transparent;
+  }
+
+  &__para {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 11rem;
+    color: $color-accent;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.7;
+    margin-bottom: 11rem;
+  }
+
+  &__names {
+    margin-top: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+  }
+
+  &__name {
+    display: inline-block;
+    background-image: linear-gradient(to right, #12c2e9, #c471ed, #ec38bc);
+    background-clip: text;
+    font-size: 4rem;
+    color: transparent;
+  }
 }
