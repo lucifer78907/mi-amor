@@ -1,0 +1,43 @@
+.nav {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-black;
+
+  &__title {
+    color: $color-white;
+    font-size: 4rem;
+    font-weight: 900;
+  }
+
+  &__item {
+    text-decoration: none;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: $color-white;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      background-color: $color-white;
+      height: 2px;
+      width: 0%;
+      position: absolute;
+      bottom: -18%;
+      left: 0;
+      transition: width 400ms ease-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 4rem;
+    margin-left: 11rem;
+  }
+}

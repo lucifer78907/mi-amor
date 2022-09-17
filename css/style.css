@@ -23,6 +23,7 @@ body {
   background-image: linear-gradient(to right, #12c2e9, #c471ed, #ec38bc);
   background-clip: text;
   display: inline-block;
+  margin-top: -11rem;
   cursor: pointer;
   font-size: 15rem;
   font-weight: 500;
@@ -57,8 +58,41 @@ body {
       background-color: #9fc9f3;
       border: 1px solid #9fc9f3; }
 
+.nav {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #100a18; }
+  .nav__title {
+    color: #eeeeee;
+    font-size: 4rem;
+    font-weight: 900; }
+  .nav__item {
+    text-decoration: none;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #eeeeee;
+    position: relative; }
+    .nav__item::after {
+      content: '';
+      display: inline-block;
+      background-color: #eeeeee;
+      height: 2px;
+      width: 0%;
+      position: absolute;
+      bottom: -18%;
+      left: 0;
+      transition: width 400ms ease-out; }
+    .nav__item:hover::after {
+      width: 100%; }
+  .nav__nav {
+    display: flex;
+    gap: 4rem;
+    margin-left: 11rem; }
+
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 11.5rem);
   background-color: #100a18;
   display: flex;
   align-items: center;
