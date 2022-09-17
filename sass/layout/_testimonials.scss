@@ -54,4 +54,11 @@
     font-size: 2rem;
     font-weight: 100;
   }
+
+  &--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+  }
 }

@@ -253,3 +253,8 @@ body {
   .testimonial__designation {
     font-size: 2rem;
     font-weight: 100; }
+  .testimonial--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute; }
