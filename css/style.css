@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@100;200;400;500;700;800;900&display=swap" rel="stylesheet');
+@keyframes bounceUp {
+  0% {
+    transform: translateY(-4rem); }
+  50% {
+    transform: translateY(4rem); }
+  100% {
+    transform: translateY(-4rem); } }
+
 *,
 *::before,
 *::after {
@@ -92,6 +100,7 @@ body {
     margin-left: 11rem; }
 
 .hero {
+  position: relative;
   min-height: calc(100vh - 11.5rem);
   background-color: #100a18;
   display: flex;
@@ -109,3 +118,16 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem; }
+
+.svg {
+  position: absolute; }
+  .svg__1 {
+    left: 0;
+    bottom: 0;
+    animation: bounceUp 3s infinite ease-in-out; }
+  .svg__2 {
+    right: 15%;
+    top: 0; }
+  .svg__3 {
+    top: 18%;
+    left: 25%; }

@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   min-height: calc(100vh - 11.5rem);
   background-color: $color-black;
   display: flex;
@@ -19,5 +20,24 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+  }
+}
+.svg {
+  position: absolute;
+
+  &__1 {
+    left: 0;
+    bottom: 0;
+    animation: bounceUp 3s infinite ease-in-out;
+  }
+
+  &__2 {
+    right: 15%;
+    top: 0;
+  }
+
+  &__3 {
+    top: 18%;
+    left: 25%;
   }
 }
