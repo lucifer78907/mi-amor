@@ -36,6 +36,11 @@
     transform: scale(1.2);
     border-radius: 11px;
     box-shadow: 0 0.5rem 1rem rgba($color-primary, $alpha: 0.2);
+    transition: all 500ms;
+
+    &:hover {
+      transform: scale(1.25);
+    }
   }
 
   &__para {
@@ -53,12 +58,5 @@
   &__designation {
     font-size: 2rem;
     font-weight: 100;
-  }
-
-  &--hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    position: absolute;
   }
 }

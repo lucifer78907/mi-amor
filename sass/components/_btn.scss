@@ -42,17 +42,32 @@
   background-color: $color-black;
   color: $color-primary;
   box-shadow: 0 0.5rem 1rem rgba($color-primary, $alpha: 0.2);
+  transition: all 100ms ease-out;
 
   &--right {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translate(50%, -50%);
+    &:hover {
+      transform: translate(50%, -55%);
+    }
+
+    &:active {
+      transform: translate(50%, -47%);
+    }
   }
   &--left {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(-50%, -50%);
+    &:hover {
+      transform: translate(-50%, -55%);
+    }
+
+    &:active {
+      transform: translate(-50%, -47%);
+    }
   }
 }

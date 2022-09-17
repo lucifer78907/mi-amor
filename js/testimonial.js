@@ -8,7 +8,6 @@ class testimonial {
     ' Bravo!, mi-amor provides a healthy community to contact with and go on finding people with same interests , i found my love interest without any harrasment and bullying , that is heaven to me  ',
   ];
   #designationArr = ['tennis player', 'dentist', 'construction site worker'];
-  #testimonialBox = document.querySelector('.testimonial__box');
   #testimonialImg = document.querySelector('.testimonial__img');
   #testimonialPara = document.querySelector('.testimonial__para');
   #testimonialName = document.querySelector('.testimonial__author');
@@ -21,11 +20,31 @@ class testimonial {
 
   _addEventListners() {
     this.#btnLeft.addEventListener('click', this._showPrev.bind(this));
+    this.#btnRight.addEventListener('click', this._showNext.bind(this));
   }
 
   _showPrev() {
+    console.log(this._currSlide);
     this._currSlide -= 1;
     if (this._currSlide <= 0) this._currSlide = 3;
+
+    // Change Img
+    this.#testimonialImg.setAttribute(
+      'src',
+      `img/testimonial-${this._currSlide}.jpg`
+    );
+
+    // Change Details
+
+    this.#testimonialPara.textContent = this.#descArr[this._currSlide - 1];
+    this.#testimonialName.textContent = this.#namesArr[this._currSlide - 1];
+    this.#testimonialDesig.textContent =
+      this.#designationArr[this._currSlide - 1];
+  }
+
+  _showNext() {
+    this._currSlide += 1;
+    if (this._currSlide >= 4) this._currSlide = 1;
 
     // Change Img
     this.#testimonialImg.setAttribute(
