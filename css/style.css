@@ -123,7 +123,7 @@ body {
   position: absolute; }
   .svg__1 {
     left: 0;
-    bottom: 0;
+    bottom: 5%;
     animation: bounceUp 3s infinite ease-in-out; }
   .svg__2 {
     right: 15%;
@@ -131,3 +131,7 @@ body {
   .svg__3 {
     top: 18%;
     left: 25%; }
+  .svg__4 {
+    bottom: 20%;
+    right: 15%;
+    animation: bounceUp 3s infinite ease-in-out; }

@@ -27,7 +27,7 @@
 
   &__1 {
     left: 0;
-    bottom: 0;
+    bottom: 5%;
     animation: bounceUp 3s infinite ease-in-out;
   }
 
@@ -39,5 +39,11 @@
   &__3 {
     top: 18%;
     left: 25%;
+  }
+
+  &__4 {
+    bottom: 20%;
+    right: 15%;
+    animation: bounceUp 3s infinite ease-in-out;
   }
 }
