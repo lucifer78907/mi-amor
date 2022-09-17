@@ -24,13 +24,16 @@ body {
   background-clip: text;
   display: inline-block;
   cursor: pointer;
-  font-size: 11rem;
+  font-size: 15rem;
   font-weight: 500;
-  color: transparent; }
+  color: transparent;
+  transition: all 400ms ease-in-out; }
+  .heading__primary:hover {
+    color: #f07dea; }
 
 .hero {
   min-height: 100vh;
-  background-image: linear-gradient(to right bottom, #f07dea 40%, #a460ed);
+  background-color: #100a18;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,4 +41,5 @@ body {
   gap: 2rem; }
   .hero__subtitle {
     font-family: var(--font-fredrika);
-    font-size: 3.2rem; }
+    font-size: 3.2rem;
+    color: #eeeeee; }
