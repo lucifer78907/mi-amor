@@ -13,3 +13,32 @@
     color: $color-primary;
   }
 }
+
+.heading__secondary {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 8rem;
+  font-weight: 700;
+  color: $color-secondary;
+
+  & span {
+    color: $color-primary;
+  }
+}
+
+.heading__tertiary {
+  display: inline-block;
+  font-size: 6rem;
+  margin-top: 3rem;
+  font-family: var(--font-fredrika);
+
+  &--1 {
+    color: $color-primary;
+  }
+  &--2 {
+    color: $color-secondary;
+  }
+  &--3 {
+    color: $color-accent;
+  }
+}

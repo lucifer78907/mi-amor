@@ -40,6 +40,27 @@ body {
   .heading__primary:hover {
     color: #f07dea; }
 
+.heading__secondary {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 8rem;
+  font-weight: 700;
+  color: #a460ed; }
+  .heading__secondary span {
+    color: #f07dea; }
+
+.heading__tertiary {
+  display: inline-block;
+  font-size: 6rem;
+  margin-top: 3rem;
+  font-family: var(--font-fredrika); }
+  .heading__tertiary--1 {
+    color: #f07dea; }
+  .heading__tertiary--2 {
+    color: #a460ed; }
+  .heading__tertiary--3 {
+    color: #9fc9f3; }
+
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -135,3 +156,25 @@ body {
     bottom: 20%;
     right: 15%;
     animation: bounceUp 3s infinite ease-in-out; }
+
+.features {
+  min-height: 100vh;
+  background-color: #100a18;
+  padding: 4rem 8rem;
+  text-align: center; }
+
+.feature__box {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  column-gap: 8rem; }
+
+.feature__card {
+  padding: 6rem;
+  background-color: #eeeeee;
+  border-radius: 11px; }
+
+.feature__desc {
+  margin-top: 3rem;
+  font-size: 2.4rem;
+  line-height: 1.5; }

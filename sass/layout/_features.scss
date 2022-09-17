@@ -1,0 +1,27 @@
+.features {
+  min-height: 100vh;
+  background-color: $color-black;
+  padding: 4rem 8rem;
+  text-align: center;
+}
+
+.feature {
+  &__box {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    column-gap: 8rem;
+  }
+
+  &__card {
+    padding: 6rem;
+    background-color: $color-white;
+    border-radius: 11px;
+  }
+
+  &__desc {
+    margin-top: 3rem;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+}
