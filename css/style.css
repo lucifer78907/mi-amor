@@ -172,9 +172,23 @@ body {
 .feature__card {
   padding: 6rem;
   background-color: #eeeeee;
-  border-radius: 11px; }
+  border-radius: 11px;
+  border: 1px solid transparent;
+  transition: all 400ms ease-out; }
+  .feature__card:hover {
+    background-color: #100a18;
+    border: 1px solid #eeeeee;
+    color: #eeeeee; }
 
 .feature__desc {
   margin-top: 3rem;
   font-size: 2.4rem;
   line-height: 1.5; }
+
+.card__active {
+  background-color: #100a18;
+  border: 1px solid #eeeeee;
+  color: #eeeeee; }
+  .card__active:hover {
+    background-color: #eeeeee;
+    color: #100a18; }

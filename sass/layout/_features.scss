@@ -17,11 +17,30 @@
     padding: 6rem;
     background-color: $color-white;
     border-radius: 11px;
+    border: 1px solid transparent;
+    transition: all 400ms ease-out;
+
+    &:hover {
+      background-color: $color-black;
+      border: 1px solid $color-white;
+      color: $color-white;
+    }
   }
 
   &__desc {
     margin-top: 3rem;
     font-size: 2.4rem;
     line-height: 1.5;
+  }
+}
+
+.card__active {
+  background-color: $color-black;
+  border: 1px solid $color-white;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
   }
 }
