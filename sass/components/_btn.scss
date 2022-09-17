@@ -30,3 +30,29 @@
     }
   }
 }
+
+.circle__btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 2rem 2.4rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  font-weight: 100;
+  background-color: $color-black;
+  color: $color-primary;
+  box-shadow: 0 0.5rem 1rem rgba($color-primary, $alpha: 0.2);
+
+  &--right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+  &--left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+}

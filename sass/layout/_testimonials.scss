@@ -10,9 +10,9 @@
   display: flex;
   justify-content: space-evenly;
   &__box {
+    position: relative;
     border-radius: 11px;
     margin-top: 15rem;
-    background-image: linear-gradient(to right, #12c2e9, #c471ed, #ec38bc);
     background-image: linear-gradient(
       to right,
       #03001e,
