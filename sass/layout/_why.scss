@@ -1,0 +1,15 @@
+.why {
+  min-height: 100vh;
+  background-color: $color-black;
+  padding: 6rem;
+  text-align: center;
+
+  &__chose-us {
+    margin-top: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin-bottom: 11rem;
+  }
+}

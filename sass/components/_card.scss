@@ -1,0 +1,35 @@
+.card {
+  background-color: $color-black;
+  border: 1px solid $color-white;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+  border-radius: 11px;
+  transition: all 500ms;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+
+  &:hover &__icon &__icon--main {
+    color: $color-accent;
+  }
+
+  &__icon {
+    &--main {
+      color: $color-primary;
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  &__para {
+    color: $color-white;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+}

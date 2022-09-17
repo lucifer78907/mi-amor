@@ -118,6 +118,31 @@ body {
     .circle__btn--left:active {
       transform: translate(-50%, -47%); }
 
+.card {
+  background-color: #100a18;
+  border: 1px solid #eeeeee;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+  border-radius: 11px;
+  transition: all 500ms; }
+  .card:hover {
+    background-color: #f07dea; }
+  .card:hover .card__icon .card__icon--main {
+    color: #9fc9f3; }
+  .card__icon--main {
+    color: #f07dea;
+    width: 8rem;
+    height: 8rem; }
+  .card__para {
+    color: #eeeeee;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.7; }
+
 .nav {
   padding: 3rem;
   display: flex;
@@ -265,3 +290,16 @@ body {
   .testimonial__designation {
     font-size: 2rem;
     font-weight: 100; }
+
+.why {
+  min-height: 100vh;
+  background-color: #100a18;
+  padding: 6rem;
+  text-align: center; }
+  .why__chose-us {
+    margin-top: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin-bottom: 11rem; }
