@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@100;200;400;500;700;800;900&display=swap" rel="stylesheet');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  line-height: 1; }
+
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-fredrika: 'Fredericka the Great', cursive; }
+
+.heading__primary {
+  background-image: linear-gradient(to right, #12c2e9, #c471ed, #ec38bc);
+  background-clip: text;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 11rem;
+  font-weight: 500;
+  color: transparent; }
+
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #f07dea 40%, #a460ed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem; }
+  .hero__subtitle {
+    font-family: var(--font-fredrika);
+    font-size: 3.2rem; }

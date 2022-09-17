@@ -1,0 +1,14 @@
+{
+  "name": "mi-amor",
+  "version": "1.0.0",
+  "description": "a dating app for LGBTQ",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Rudra and others",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

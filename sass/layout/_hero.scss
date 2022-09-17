@@ -1,0 +1,18 @@
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary 40%,
+    $color-secondary
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__subtitle {
+    font-family: var(--font-fredrika);
+    font-size: 3.2rem;
+  }
+}
