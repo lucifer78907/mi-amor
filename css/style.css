@@ -199,7 +199,6 @@ body {
     line-height: 1.7;
     margin-bottom: 11rem; }
   .footer__names {
-    margin-top: 11rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,6 +210,15 @@ body {
     background-clip: text;
     font-size: 4rem;
     color: transparent; }
+  .footer__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+  .footer__img {
+    width: 20rem;
+    height: 20rem; }
 
 .hero {
   position: relative;

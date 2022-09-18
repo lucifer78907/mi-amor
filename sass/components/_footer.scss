@@ -26,7 +26,6 @@
   }
 
   &__names {
-    margin-top: 11rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,5 +39,18 @@
     background-clip: text;
     font-size: 4rem;
     color: transparent;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__img {
+    width: 20rem;
+    height: 20rem;
   }
 }
