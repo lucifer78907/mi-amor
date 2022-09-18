@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #100a18;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0rem 5rem;
+  font-family: 'inherit';
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to right, #12c2e9, #c471ed, #ec38bc);
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 5rem;
+  background-color: #d9d9d9;
+  text-align: center;
+  border-radius: 11px;
+  box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25),
+    0 1rem 1rem rgba(0, 0, 0, 0.22);
+  position: relative;
+  max-width: 100%;
+  min-height: 72%;
+  padding: 5rem 5rem;
+  margin: 5% 15%;
+}
+
+.container--sign-in-left {
+  left: 0;
+  width: 50%;
+  padding-top: 2.4rem;
+}
+
+.forms {
+  padding: 5rem 1.2rem;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  border: 0.1rem solid #d9d9d9;
+  border-radius: 1rem;
+  margin-bottom: 2.4rem;
+  box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25),
+    0 1rem 1rem rgba(0, 0, 0, 0.22);
+}
+
+.btn--fill {
+  text-align: left;
+  align-self: start;
+  padding: 1.2rem 20rem 1.2rem 1rem;
+  background-color: #baa3d1;
+  color: #fff;
+}
+
+.image-box-right {
+  position: relative;
+}
+
+.svg__show {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+.btn--sign_up {
+  font-weight: bold;
+  background-color: #4e4377;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  border-radius: 11px;
+  align-items: center;
+  padding: 1.2rem 4.8rem;
+  transition: transform 0.2s ease-in;
+}
+
+.btn--sign_up::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 1;
+}
+
+.btn--sign_up:hover {
+  transform: translateY(-0.3rem);
+}
+
+.form_field {
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-left: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.container--sign-in-right {
+  padding: 0rem -5rem;
+}
