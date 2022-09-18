@@ -12,14 +12,20 @@
   </head>
   <body>
     <main>
-      <aside class="nav">
+      <aside class="nav" id="nav">
         <p class="nav__title">mi</p>
         <ul class="nav__nav">
-          <li class="nav__link"><a href="#" class="nav__item">mi-amor</a></li>
-          <li class="nav__link"><a href="#" class="nav__item">features</a></li>
-          <li class="nav__link"><a href="#" class="nav__item">reviews</a></li>
           <li class="nav__link">
-            <a href="#" class="nav__item">contact us</a>
+            <a href="#nav" class="nav__item">mi-amor</a>
+          </li>
+          <li class="nav__link">
+            <a href="#features" class="nav__item">features</a>
+          </li>
+          <li class="nav__link">
+            <a href="#users" class="nav__item">reviews</a>
+          </li>
+          <li class="nav__link">
+            <a href="#footer" class="nav__item">contact us</a>
           </li>
         </ul>
         <button class="btn btn--bordered">Sign up</button>
@@ -36,7 +42,7 @@
         <img src="img/heart.svg" alt="traingle shapes" class="svg svg__3" />
         <img src="img/circle1.svg" alt="traingle shapes" class="svg svg__4" />
       </header>
-      <section class="features section-scroll">
+      <section class="features section-scroll" id="features">
         <h2 class="heading__secondary section">
           Features of <span>mi-amor</span>
         </h2>
@@ -86,7 +92,7 @@
         </article>
       </section>
 
-      <section class="testimonials section-scroll">
+      <section class="testimonials section-scroll" id="users">
         <h2 class="heading__secondary section">Happy <span>users</span></h2>
         <div class="testimonial__box">
           <article class="testimonial testimonial--active">
@@ -170,7 +176,7 @@
         </aside>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <p class="footer__heading section">About Us</p>
       <p class="footer__para">
         we are a group of developers who always think of way to make people life
