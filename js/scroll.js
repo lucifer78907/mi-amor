@@ -1,6 +1,6 @@
 class scroll {
   #nav = document.querySelector('.nav');
-  #sections = document.querySelectorAll('.section');
+  #sections = document.querySelectorAll('.section-scroll');
   #footer = document.querySelector('.footer');
   #allSections = [this.#nav, ...this.#sections, this.#footer];
   #currIndx = 0;
