@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@100;200;400;500;700;800;900&display=swap" rel="stylesheet');
 *,
 *::after,
 *::before {
@@ -22,7 +23,7 @@ body {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 4rem;
   text-align: center;
   margin-bottom: 2rem;
   background-image: linear-gradient(to right, #12c2e9, #c471ed, #ec38bc);
@@ -45,7 +46,7 @@ h1 {
     0 1rem 1rem rgba(0, 0, 0, 0.22);
   position: relative;
   max-width: 100%;
-  min-height: 72%;
+  height: 
   padding: 5rem 5rem;
   margin: 5% 15%;
 }
@@ -63,22 +64,30 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 1.6rem;
 }
 
 .btn {
   border: 0.1rem solid #d9d9d9;
   border-radius: 1rem;
   margin-bottom: 2.4rem;
-  box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25),
+  box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.1),
     0 1rem 1rem rgba(0, 0, 0, 0.22);
 }
 
 .btn--fill {
+  border: none;
   text-align: left;
   align-self: start;
-  padding: 1.2rem 20rem 1.2rem 1rem;
-  background-color: #baa3d1;
+  padding: 2rem 20rem 2rem 1rem;
+  background-color: #a460ed;
   color: #fff;
+  font-family: inherit;
+  font-size: 2rem;
+}
+
+.btn--fill:focus {
+  outline: none;
 }
 
 .image-box-right {
@@ -109,18 +118,31 @@ h1 {
   opacity: 1;
 }
 
+.middle {
+  justify-content: center;
+}
+
 .btn--sign_up:hover {
   transform: translateY(-0.3rem);
 }
 
 .form_field {
   align-self: flex-start;
+  font-family: 'Fredericka the Great';
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 3rem;
   margin-left: 0.6rem;
   margin-bottom: 1.2rem;
 }
 
 .container--sign-in-right {
   padding: 0rem -5rem;
+}
+
+.icons {
+  padding: 3rem 3rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.22);
 }
